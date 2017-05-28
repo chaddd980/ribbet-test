@@ -1,1 +1,1 @@
-.overflowingContent{width:-webkit-max-content;width:max-content}.scroll-item{display:block;float:left}
+.overflowingContent{width:-webkit-max-content;width:max-content;display:flex;flex-direction:row}.scroll-item{display:block;float:left}.scroll-div{overflow-x:auto !important;white-space:nowrap;margin-top:15px}.scroll-item{margin-right:2vw;border-radius:6px;float:none}scroll-content-div{display:flex;flex-direction:column}p{margin:0 !important}
