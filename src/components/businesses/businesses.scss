@@ -1,0 +1,21 @@
+businesses {
+
+}
+// ion-row.row {
+//   white-space: nowrap;
+//   overflow-x: scroll;
+// }
+// .scroll-item{
+//   display: inline-block;
+// }
+.overflowingContent{
+  width: -webkit-max-content;
+  width: max-content;
+}
+.scroll-item{
+  display: block;
+  float: left;
+}
+businesses.content.scroll-content{
+  
+}
