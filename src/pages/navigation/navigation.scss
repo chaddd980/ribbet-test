@@ -23,6 +23,7 @@ input.searchbar-input{
   box-shadow: 0 0 0 0 !important;
   height: 4rem !important;
   font-size: 18px !important;
+  margin-top: 1.5rem;
 }
 input::-webkit-input-placeholder{
   color: $placeholder-color !important;
@@ -33,7 +34,7 @@ div.searchbar-search-icon{
   background-size: 18px 18px !important;
   height: 18px !important;
   width: 18px !important;
-  top: 11px !important;
+  top: 28px !important;
 }
 ion-searchbar.searchbar{
   padding-left: 0;
@@ -48,6 +49,7 @@ ion-searchbar.searchbar{
 .points-col{
   text-align: center;
   padding-right: 1px;
+  margin-top: 1.5rem;
 }
 .points{
   height: 5vw;
@@ -64,7 +66,7 @@ ion-searchbar.searchbar{
   border-bottom: 0.7vw solid white;
 }
 .header-ios .toolbar-ios:last-child .toolbar-background-ios {
-  border-width: 0 0 0; 
+  border-width: 0 0 0;
 }
 .left-nav{
   text-align: left;
