@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MyDataService } from "../../app/my-data.service";
+
 
 /**
  * Generated class for the BusinessesComponent component.
@@ -12,10 +14,15 @@ import { Component } from '@angular/core';
 })
 export class BusinessesComponent {
 
-  icons = [];
+  cards = [];
+  types = ["","Cafe", "Retail", "Restaurant", "Restaurant"]
 
-  constructor() {
+  constructor(private newService: MyDataService) {
     console.log('Hello BusinessesComponent Component');
+  }
+
+  ngOnInit(){
+    this.newService.fetchData().subscribe(responseData => this.cards = responseData.cards);
   }
 
 }

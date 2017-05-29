@@ -4,6 +4,8 @@ import { OffersPage } from "../offers/offers";
 import { GiftCardPage } from "../gift-card/gift-card";
 import { DiscoverPage } from "../discover/discover";
 import { HomePage } from "../home/home";
+import { MyDataService } from "../../app/my-data.service";
+
 
 @Component({
   selector: 'navigation',
@@ -11,16 +13,16 @@ import { HomePage } from "../home/home";
 })
 export class NavigationComponent {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, private newService: MyDataService) {
   }
   activeHome
   activeOffer
   activeGiftCard
   activeDiscover
+  score = 500;
+
 
   onLoadHome(event){
-    // this.activeHome = "active"
     this.navCtrl.push(HomePage)
   }
   onLoadOffers(event){
@@ -33,10 +35,12 @@ export class NavigationComponent {
     this.navCtrl.push(DiscoverPage)
   }
 
+
   @Input('active') active: string;
 
   ngOnInit(){
-    console.log(this.active)
+    this.newService.fetchData().subscribe(responseData => this.score = responseData.reward_points);
+    console.log(this.score)
     if(this.active === "home") {
       this.activeHome = "active";
       this.activeOffer = "inactive";

@@ -2,24 +2,23 @@
   <ion-grid>
       <ion-row>
           <ion-col col-10 color="secondary">
-            <!-- <ion-icon class="ios-search-glass" ios="ios-search" md="md-search"></ion-icon> -->
             <ion-searchbar placeholder="Toronto" animated="true">
             </ion-searchbar>
           </ion-col>
           <ion-col col-2 class="points-col">
-              <p class="points-number">1000</p>
+              <p class="points-number">{{ score }}</p>
               <p class="points">Points</p>
           </ion-col>
-          <ion-col col-3>
+          <ion-col col-3 class="tabs">
               <p class="left-nav nav-tab {{activeHome}}" (tap)="onLoadHome()">For You</p>
           </ion-col>
-          <ion-col col-3>
+          <ion-col col-3 class="tabs">
               <p class="offers-nav middle-nav nav-tab {{activeOffer}}" (tap)="onLoadOffers()">Offers</p>
           </ion-col>
-          <ion-col col-3>
+          <ion-col col-3 class="tabs">
               <p class="middle-nav nav-tab {{activeGiftCard}}" (click)="onLoadGiftCard()">Gift Card</p>
           </ion-col>
-          <ion-col col-3>
+          <ion-col col-3 class="tabs">
               <p class="right-nav nav-tab {{activeDiscover}}" (click)="onLoadDiscover()">Discover</p>
           </ion-col>
       </ion-row>

@@ -7,11 +7,12 @@ import { OffersPage } from '../pages/offers/offers';
 import { GiftCardPage } from '../pages/gift-card/gift-card';
 import { DiscoverPage } from '../pages/discover/discover';
 import { NavigationComponent } from '../pages/navigation/navigation';
-
-
+import { MyDataService } from './my-data.service';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BusinessesComponent } from '../components/businesses/businesses';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +22,12 @@ import { BusinessesComponent } from '../components/businesses/businesses';
     GiftCardPage,
     DiscoverPage,
     NavigationComponent,
-    BusinessesComponent
+    BusinessesComponent,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,10 +37,11 @@ import { BusinessesComponent } from '../components/businesses/businesses';
     GiftCardPage,
     DiscoverPage,
     NavigationComponent,
-    BusinessesComponent
+    BusinessesComponent,
   ],
   providers: [
     StatusBar,
+    MyDataService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

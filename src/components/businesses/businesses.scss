@@ -1,18 +1,17 @@
+$main-color: #fcbd82;
+$font-size: 15px;
+
 businesses {
 
 }
-// ion-row.row {
-//   white-space: nowrap;
-//   overflow-x: scroll;
-// }
-// .scroll-item{
-//   display: inline-block;
-// }
 .overflowingContent{
   width: -webkit-max-content;
   width: max-content;
   display: flex;
   flex-direction: row;
+}
+li{
+  list-style: none;
 }
 .scroll-item{
   display: block;
@@ -24,7 +23,7 @@ businesses {
   margin-top: 15px;
 }
 .scroll-item{
-  margin-right: 2vw;
+  margin-right: 4vw;
   border-radius: 6px;
   float: none;
 }
@@ -33,6 +32,18 @@ scroll-content-div{
   display: flex;
   flex-direction: column;
 }
-p{
+.card{
   margin: 0 !important;
+  font-size: $font-size !important;
+}
+
+.distance{
+  color: $main-color;
+  font-size: $font-size * 0.8;
+  margin-left: 0;
+}
+
+.type{
+  font-size: $font-size * 0.9;
+  margin-left: 0;
 }

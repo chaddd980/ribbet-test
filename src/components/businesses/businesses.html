@@ -1,80 +1,11 @@
 <!-- Generated template for the BusinessesComponent component -->
-  <div class="scroll-div" scrollX="true"style="height:145px;width:300px;">
-    <div class="overflowingContent" style="height:145px;width:2000px;top:-90px;">
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
+  <div class="scroll-div" scrollX="true"style="height:145px;width:500px;">
+    <div class="overflowingContent" style="height:145px;width:830px;top:-90px;">
+      <div *ngFor="let card of cards" class="scroll-content-div">
+        <img src={{card.card_img}} width='155vw' height=85vw class="scroll-item">
+        <p class="card">{{card.company_name}}</p>
+        <p class="type">{{types[card.card_no]}}</p>
+        <p class="distance">0.{{card.card_no}} km</p>
       </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-      <div class="scroll-content-div">
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" width='130vw' height="85vw" class="scroll-item"/>
-        <p>Store Title</p>
-        <p>Stroe Type</p>
-        <p>Distance</p>
-      </div>
-
     </div>
   </div>
-
-    <!-- <ion-segment style='width:800px;'>
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" class="scroll-item"/>
-    </ion-segment>
-    <ion-segment style='width:800px;'>
-        <img src="http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" class="scroll-item"/>
-    </ion-segment> -->
-<!-- </ion-content> -->

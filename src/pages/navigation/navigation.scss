@@ -35,17 +35,18 @@ ion-searchbar.searchbar{
   height: 6.5vw;
   margin: 0;
   text-align: center;
-  font-size: 5vw;
+  font-size: 5.5vw;
   margin-top: 0.8vw;
 }
 .points-col{
   text-align: center;
+  padding-right: 1px;
 }
 .points{
   height: 5vw;
   margin: 0;
-  font-size: 3.3vw;
-  text-align: center;
+  font-size: 3vw;
+  // text-align: center;
 }
 .nav-tab{
   margin: 2vw 0 0;
@@ -60,7 +61,7 @@ ion-searchbar.searchbar{
   padding-left: 3px;
 }
 .right-nav{
-  margin-left: 12px;
+  margin-left: 17px;
   text-align: right;
 }
 .middle-nav{
@@ -72,8 +73,6 @@ ion-searchbar.searchbar{
 ion-col.col{
   padding-bottom: 0;
   display: inline-block;
-  // flex-direction: column;
-  // justify-content: flex-end;
   padding-left: 0;
 }
 ion-icon{
